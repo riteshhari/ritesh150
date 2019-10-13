@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
 //here we are creating merge function in which we are passing an array and its lower and upper limit in which we do merging
-int merg(int *a,int s,int e)
+int merg(long int *a, long int s,long int e)
 {
-    int m=(s+e)/2;
-    int i=s,k=s,j=m+1;
-    int t[100];
+   long int m=(s+e)/2;
+    long int i=s,k=s,j=m+1;
+   long int t[100];
     while(i<=m&&j<=e)
     {
         if(a[i]<a[j])
@@ -29,11 +29,11 @@ int merg(int *a,int s,int e)
     }
 }
 //here we are creating merge sort function in which we do the partion of array
-int mergesort(int a[],int s,int e)
+int mergesort(long int a[],long int s,long int e)
 {
     if(s<e)
     {
-        int m=(s+e)/2;
+       long int m=(s+e)/2;
         mergesort(a,s,m);
         mergesort(a,m+1,e);
         merg(a,s,e);
@@ -41,9 +41,9 @@ int mergesort(int a[],int s,int e)
 }
 int main()   
 {
-    int n;
+    long int n;
     cin>>n;
-    int a[n],i;
+    long int a[n],i;
     for(i=0;i<n;i++)
     {
         cin>>a[i];
