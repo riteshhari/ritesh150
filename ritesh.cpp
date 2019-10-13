@@ -48,8 +48,15 @@ int main()
     {
         cin>>a[i];
     }
+   //here we print the array before sorting 
+   for(i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+   
     //here we call thee function
     mergesort(a,0,n-1);
+   //here we print the array after sorting
     for(i=0;i<n;i++)
     {
         cout<<a[i]<<" ";
