@@ -37,7 +37,21 @@ int mergesort(int a[],int s,int e)
         merg(a,s,e);
     }
 }
-int main()
+int main()   
 {
+    int n;
+    cin>>n;
+    int a[n],i;
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    mergesort(a,0,n-1);
+    for(i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+
+    
     
 }
