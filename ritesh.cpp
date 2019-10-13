@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//here we are creating merge function in which we are passing an array and its lower and upper limit in which we do merging
 int merg(int *a,int s,int e)
 {
     int m=(s+e)/2;
@@ -27,6 +28,7 @@ int merg(int *a,int s,int e)
         a[i]=t[i];
     }
 }
+//here we are creating merge sort function in which we do the partion of array
 int mergesort(int a[],int s,int e)
 {
     if(s<e)
@@ -46,6 +48,7 @@ int main()
     {
         cin>>a[i];
     }
+    //here we call thee function
     mergesort(a,0,n-1);
     for(i=0;i<n;i++)
     {
